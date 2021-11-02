@@ -1,6 +1,11 @@
 @import "_reset";
 @import "_variables";
 
+@mixin para-style($size, $style) {
+    font-size: $size;
+    text-align: $style;
+}
+
 header {
     background: $header_backgrund_color;
     padding: 2rem;
@@ -36,7 +41,7 @@ main {
 
     #about {
         p {
-            font-size: $para_font_size;
+            @include para-style(15px, center)
         }
     }
 }
@@ -44,4 +49,8 @@ main {
 footer {
     background: $footer_backgrund_color;
     padding: 2rem;
+
+    p {
+        @include para-style(15px, center)
+    }
 }

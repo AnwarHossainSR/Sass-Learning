@@ -46,10 +46,16 @@ main {
 
 main #about p {
   font-size: 15px;
+  text-align: center;
 }
 
 footer {
   background: #ffaec0;
   padding: 2rem;
+}
+
+footer p {
+  font-size: 15px;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
