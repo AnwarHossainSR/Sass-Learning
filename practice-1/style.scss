@@ -8,16 +8,16 @@
 
 @mixin ankertag-size($value) {
     @if($value==small) {
-    font-size: 10px;
-}
+        font-size: 10px;
+    }
 
-@else if($value==medium) {
-    font-size: 20px;
-}
+    @else if($value==medium) {
+        font-size: 20px;
+    }
 
-@else {
-    font-size: 30px;
-}
+    @else {
+        font-size: 30px;
+    }
 }
 
 header {
@@ -84,4 +84,24 @@ footer {
     p {
         @include para-style(15px, center)
     }
+
+    [class*='col-'] {
+        float: left;
+    }
+
+    @for $i from 1 through 12 {
+        .col-#{$i} {
+            width: 100% / 12 * $i;
+            margin-left: 2px;
+            border: 1px solid #581523;
+        }
+    }
+
+    .row::after {
+        clear: both;
+        content: '';
+        display: table;
+    }
+
+
 }
