@@ -43,6 +43,22 @@ main {
         p {
             @include para-style(15px, center)
         }
+
+        .button {
+            display: flex;
+            justify-content: space-between;
+
+            .btn {
+                background: cornflowerblue;
+                padding: 1rem;
+                cursor: pointer;
+            }
+
+            .btn-more {
+                @extend .btn;
+                background: crimson;
+            }
+        }
     }
 }
 

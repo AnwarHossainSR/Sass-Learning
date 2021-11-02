@@ -49,6 +49,25 @@ main #about p {
   text-align: center;
 }
 
+main #about .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main #about .button .btn, main #about .button .btn-more {
+  background: cornflowerblue;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+main #about .button .btn-more {
+  background: crimson;
+}
+
 footer {
   background: #ffaec0;
   padding: 2rem;
