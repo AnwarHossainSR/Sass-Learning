@@ -1,6 +1,57 @@
+//variables
+$header_backgrund_color : #ab73;
+$main_backgrund_color : #ffd384;
+$footer_backgrund_color : #ffaec0;
+$para_font_size : 15px;
+
 /*Browser reset code*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+header {
+    background: $header_backgrund_color;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+
+    nav {
+        padding: 5px;
+
+        ul {
+            list-style-type: none;
+            margin-top: 5px;
+
+            li {
+                display: inline-block;
+
+                a {
+                    text-decoration: none;
+                    color: #581523;
+                }
+
+                a:hover {
+                    color: aqua;
+                }
+            }
+        }
+    }
+}
+
+main {
+    background: $main_backgrund_color;
+    padding: 2rem;
+
+    #about {
+        p {
+            font-size: $para_font_size;
+        }
+    }
+}
+
+footer {
+    background: $footer_backgrund_color;
+    padding: 2rem;
 }

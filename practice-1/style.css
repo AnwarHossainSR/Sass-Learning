@@ -5,4 +5,51 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+header {
+  background: #ab73;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header nav {
+  padding: 5px;
+}
+
+header nav ul {
+  list-style-type: none;
+  margin-top: 5px;
+}
+
+header nav ul li {
+  display: inline-block;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #581523;
+}
+
+header nav ul li a:hover {
+  color: aqua;
+}
+
+main {
+  background: #ffd384;
+  padding: 2rem;
+}
+
+main #about p {
+  font-size: 15px;
+}
+
+footer {
+  background: #ffaec0;
+  padding: 2rem;
+}
 /*# sourceMappingURL=style.css.map */
