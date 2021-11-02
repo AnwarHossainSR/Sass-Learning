@@ -1,15 +1,5 @@
-//variables
-$header_backgrund_color : #ab73;
-$main_backgrund_color : #ffd384;
-$footer_backgrund_color : #ffaec0;
-$para_font_size : 15px;
-
-/*Browser reset code*/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import "_reset";
+@import "_variables";
 
 header {
     background: $header_backgrund_color;
